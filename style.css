@@ -20,7 +20,7 @@ nav {
   flex-wrap: wrap;
   justify-content:space-between;
   align-items: center;
-  background-color: rgb(153, 152, 152);
+  background-color: #999898;
   border-radius: .5rem;
 }
 
@@ -72,6 +72,25 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* -- MAIN -- */
+
+main {
+  grid-column: 2/ 10;
+  background-color: #999898;
+  border-radius: 2rem;
+  display: grid;
+}
+  
+.container {
+
+}
+
+#areas {
+
+}
+
+/* -- MEDIA -- */
 
 @media only screen and (max-width: 450px) {
   nav {
