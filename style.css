@@ -4,11 +4,12 @@ body {
   font-family: 'Work Sans', sans-serif;
   display: grid;
   grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+  gap: 1rem;
 }
 
 a {
   text-decoration: none;
-  color: rgb(152, 232, 12);
+  color: rgb(241, 241, 241);
 }
 
 /* -- NAV -- */
@@ -19,6 +20,8 @@ nav {
   flex-wrap: wrap;
   justify-content:space-between;
   align-items: center;
+  background-color: rgb(153, 152, 152);
+  border-radius: .5rem;
 }
 
 nav figure {
@@ -47,4 +50,24 @@ nav figure img {
 
 .flexMenuContainer li:hover {
   text-shadow: .1em .1em .2em beige;
+}
+
+/* -- HEADER -- */
+
+header {
+  grid-area: 2/1/4/11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-shadow: .1em .1em .2em beige;
+  border-radius: .5rem;
+  align-items: center;
+}
+
+.backImg {
+  background-image: url('./resources/images/header_background.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
