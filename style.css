@@ -1,0 +1,18 @@
+body {
+  box-sizing: border-box;
+  background-color: #101010;
+  font-family: 'Work Sans', sans-serif;
+  display: grid;
+  grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+}
+
+nav figure {
+  grid-area: 1 / 1 / 2 / 3;
+  margin: 1rem;
+}
+
+nav figure img {
+  max-width: 100%;
+  max-height: auto;
+  display: block;
+}
