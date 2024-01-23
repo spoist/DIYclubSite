@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  background-color: #101010;
+  background-color: #c4c4c4;
   font-family: 'Work Sans', sans-serif;
   display: grid;
   grid-template: repeat(10, 1fr) / repeat(10, 1fr);
@@ -31,7 +31,7 @@ nav figure {
 
 nav figure img {
   max-width: 100%;
-  max-height: auto;
+  height: auto;
   display: block;
 }
 
@@ -50,6 +50,7 @@ nav figure img {
 
 .flexMenuContainer li:hover {
   text-shadow: .1em .1em .2em beige;
+  text-decoration: underline;
 }
 
 /* -- HEADER -- */
@@ -70,4 +71,16 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media only screen and (max-width: 450px) {
+  nav {
+    justify-content: center;
+  }
+  
+  nav figure {
+    max-width: 30%;
+  }
+
+
 }
